@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#104586">
+  <meta name="description" content="AL WALEED — Boutique électronique, import-export, change de devises, impression 3D, cartes NFC et transformation digitale au Sénégal.">
+  <title>AL WALEED SUARL — Boutique iPhone & services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/homepage-iphone-reference.png">
+</head>
+<body>
+  <div class="topline">AL WALEED · Technologie, commerce & innovation en Afrique de l’Ouest</div>
+  <header class="header">
+    <a class="brand" href="#accueil" aria-label="AL WALEED, accueil">
+      <img class="brand-logo" src="assets/al-waleed-suarL-logo.png" alt="AL WALEED SUARL">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+    <nav id="mainNav">
+      <a href="#boutique">Boutique</a><a href="#services">Nos services</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+      <a class="nav-whatsapp" href="#commande">Commander ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-reference" id="accueil">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> AL WALEED · BOUTIQUE IPHONE</span>
+        <h1>Le bon iPhone.<br><em>Le bon choix.</em></h1>
+        <p>Découvrez les gammes iPhone 17 et iPhone 18 dans une expérience simple, élégante et personnalisée. Choisissez votre modèle, puis échangez directement avec notre équipe.</p>
+        <div class="hero-actions">
+          <a class="btn btn-blue" href="#boutique">Explorer la boutique <span>↗</span></a>
+          <a class="text-link" href="#commande">Personnaliser ma demande →</a>
+        </div>
+        <div class="hero-trust"><span class="trust-check">✓</span><span>Conseil personnalisé</span><span class="trust-divider"></span><span>Confirmation sur WhatsApp</span></div>
+      </div>
+      <div class="hero-reference-visual">
+        <img src="assets/homepage-iphone-reference.png" alt="Trois iPhone présentés sur un fond clair, image d'inspiration de la boutique AL WALEED" fetchpriority="high">
+        <div class="reference-caption"><span class="caption-dot"></span><span>Une sélection pensée pour vous</span></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-icon">◇</span><div><b>Deux gammes à explorer</b><small>iPhone 17 et iPhone 18</small></div></div>
+      <div><span class="benefit-icon">↗</span><div><b>Commande simplifiée</b><small>Votre demande sur WhatsApp</small></div></div>
+      <div><span class="benefit-icon">◎</span><div><b>Conseil personnalisé</b><small>Prix et disponibilité confirmés</small></div></div>
+    </section>
+
+    <section class="range-showcase" aria-label="Explorer les gammes iPhone">
+      <div class="range-heading"><span class="eyebrow blue">TROUVEZ VOTRE MODÈLE</span><h2>Deux gammes. <em>Votre choix.</em></h2><p>Parcourez les modèles et envoyez-nous vos préférences pour recevoir une confirmation.</p></div>
+      <div class="range-grid">
+        <a href="#boutique" class="range-card range-17" data-range-link="iPhone 17">
+          <div class="range-card-copy"><span>LA GAMME</span><h3>iPhone 17</h3><p>Design soigné. Puissance au quotidien.</p><b>Explorer la gamme <span>↗</span></b></div>
+          <img src="assets/iphone-17-pro-transparent.png" alt="" loading="lazy">
+          <span class="range-watermark">17</span>
+        </a>
+        <a href="#boutique" class="range-card range-18" data-range-link="iPhone 18">
+          <div class="range-card-copy"><span>LA GAMME À DÉCOUVRIR</span><h3>iPhone 18</h3><p>Découvrez les références du catalogue.</p><b>Explorer la gamme <span>↗</span></b></div>
+          <img src="assets/iphone-18-pro-transparent.png" alt="" loading="lazy">
+          <span class="range-watermark">18</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="shop section" id="boutique">
+      <div class="section-head">
+        <div><span class="eyebrow blue">LA BOUTIQUE AL WALEED</span><h2>L’expérience iPhone, <em>signée AL WALEED.</em></h2><p>Explorez les gammes iPhone 17 et iPhone 18. Les tarifs et disponibilités sont confirmés avant validation de la commande.</p></div>
+        <a class="text-link desktop-only" href="#contact">Un besoin spécifique ? →</a>
+      </div>
+      <div class="shop-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher un produit…" aria-label="Rechercher un produit"></label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Tous">Toute la gamme</button>
+          <button class="filter" data-category="iPhone 17">iPhone 17</button>
+          <button class="filter" data-category="iPhone 18">iPhone 18</button>
+        </div>
+      </div>
+      <p class="price-note"><span>ⓘ</span> Choisissez le modèle souhaité : notre équipe vous confirmera le prix, la configuration et la disponibilité sur WhatsApp.</p>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>Aucun produit ne correspond à votre recherche. <button id="resetSearch">Réinitialiser</button></div>
+      <section class="order-form-section" id="commande">
+        <div class="order-intro">
+          <span class="eyebrow blue">VOTRE DEMANDE EN QUELQUES CLICS</span>
+          <h3>Choisissez votre <em>iPhone.</em></h3>
+          <p>Complétez le formulaire. Votre demande sera préparée dans WhatsApp pour que notre équipe puisse confirmer le prix et la disponibilité.</p>
+          <div class="order-assurance"><span>✓</span> Aucun paiement en ligne requis pour envoyer la demande.</div>
+        </div>
+        <form id="orderForm" class="order-form">
+          <div class="form-row">
+            <label>Gamme souhaitée
+              <select id="orderRange" name="range" required>
+                <option value="">Sélectionner une gamme</option>
+                <option value="iPhone 17">Gamme iPhone 17</option>
+                <option value="iPhone 18">Gamme iPhone 18 (disponibilité à confirmer)</option>
+              </select>
+            </label>
+            <label>Modèle
+              <select id="orderModel" name="model" required>
+                <option value="">Choisir d’abord la gamme</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Stockage souhaité
+              <select id="orderStorage" name="storage" required>
+                <option value="">Sélectionner</option><option>256 Go</option><option>512 Go</option><option>1 To</option><option>À conseiller</option>
+              </select>
+            </label>
+            <label>Couleur préférée
+              <select id="orderColor" name="color" required>
+                <option value="">Sélectionner</option><option>Noir / sombre</option><option>Blanc / argent</option><option>Bleu</option><option>Violet</option><option>Orange</option><option>Autre / à conseiller</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Quantité
+              <select id="orderQuantity" name="quantity" required><option>1</option><option>2</option><option>3</option><option>4</option><option>5 ou plus</option></select>
+            </label>
+            <label>État recherché
+              <select id="orderCondition" name="condition" required><option value="">Sélectionner</option><option>Neuf</option><option>Reconditionné</option><option>À conseiller</option></select>
+            </label>
+          </div>
+          <label>Votre nom
+            <input id="orderName" name="name" type="text" placeholder="Nom et prénom" required>
+          </label>
+          <label>Votre numéro de téléphone
+            <input id="orderPhone" name="phone" type="tel" placeholder="+221 ..." required>
+          </label>
+          <label>Précisions supplémentaires <span class="optional">(facultatif)</span>
+            <textarea id="orderNotes" name="notes" rows="3" placeholder="Budget, délai souhaité, accessoires…"></textarea>
+          </label>
+          <button class="btn btn-blue full" type="submit">Envoyer ma demande sur WhatsApp <span>↗</span></button>
+          <p class="form-privacy">En envoyant ce formulaire, vous ouvrez WhatsApp avec les informations de votre demande. Rien n’est envoyé automatiquement sans votre action dans WhatsApp.</p>
+        </form>
+      </section>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-head">
+        <div><span class="eyebrow blue">BIEN PLUS QU’UNE BOUTIQUE</span><h2>Un partenaire pour <em>vos ambitions.</em></h2><p>AL WALEED SUARL réunit commerce, solutions créatives et accompagnement des professionnels.</p></div>
+      </div>
+      <div class="service-grid">
+        <article class="service-card service-featured"><div class="service-icon">⌘</div><span class="service-number">01 / TECH</span><h3>Produits électroniques</h3><p>Une boutique dédiée aux gammes iPhone 17 et iPhone 18, avec conseil et commande directe.</p><a href="#boutique">Explorer les produits ↗</a></article>
+        <article class="service-card"><div class="service-icon">⇄</div><span class="service-number">02 / COMMERCE</span><h3>Change & import-export</h3><p>Accompagnement pour vos besoins de change et vos projets d’approvisionnement international. Opérations selon conditions et vérifications applicables.</p><a href="#contact">Parler à un conseiller ↗</a></article>
+        <article class="service-card"><div class="service-icon">▦</div><span class="service-number">03 / FABRICATION</span><h3>Impression 3D & cartes NFC</h3><p>Objets personnalisés, supports innovants, cartes NFC et expériences connectées pour votre activité.</p><a href="#contact">Décrire mon projet ↗</a></article>
+        <article class="service-card"><div class="service-icon">✳</div><span class="service-number">04 / DIGITAL</span><h3>Branding & création digitale</h3><p>Identité de marque, sites web, supports de communication et expériences digitales interactives.</p><a href="#contact">Construire mon projet ↗</a></article>
+        <article class="service-card"><div class="service-icon">↗</div><span class="service-number">05 / STRATÉGIE</span><h3>Transformation digitale</h3><p>Conseil et accompagnement pour moderniser les opérations et développer votre présence numérique.</p><a href="#contact">Parlons de vos objectifs ↗</a></article>
+      </div>
+    </section>
+
+    <section class="about section" id="apropos">
+      <div class="about-mark"><div class="big-mark">W</div><div class="mark-caption">AL WALEED<br><small>INNOVATION · ACCESSIBILITÉ · IMPACT · FIABILITÉ</small></div></div>
+      <div class="about-copy"><span class="eyebrow">NOTRE ENGAGEMENT</span><h2>Faire de la transformation digitale un <em>catalyseur du développement.</em></h2><p>Entreprise sénégalaise visionnaire, AL WALEED accompagne les particuliers et les entreprises avec des solutions modernes, fiables et adaptées aux réalités locales comme aux ambitions globales.</p><p>Notre ambition : contribuer au commerce intelligent et à l’émergence d’une Afrique forte, créative et souveraine.</p><a class="btn btn-light" href="#contact">Travaillons ensemble <span>↗</span></a></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div><span class="eyebrow blue">RESTONS EN CONTACT</span><h2>Un produit. Une idée.<br><em>Un projet à concrétiser.</em></h2><p>Écrivez-nous sur WhatsApp pour une commande, un devis ou une demande d’accompagnement.</p><a class="btn btn-blue" href="https://wa.me/221787560327?text=Bonjour%20AL%20WALEED%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener">Contacter AL WALEED sur WhatsApp ↗</a></div>
+      <div class="contact-details">
+        <div><small>TÉLÉPHONE / COMMANDES</small><a href="https://wa.me/221787560327" target="_blank" rel="noopener">+221 78 756 03 27</a></div>
+        <div><small>TÉLÉPHONE FIXE</small><a href="tel:+221338588922">+221 33 858 89 22</a></div>
+        <div><small>EMAIL</small><a href="mailto:contact@alwaleed.sn">contact@alwaleed.sn</a></div>
+        <div><small>ADRESSE</small><p>Cité Onomo, Route de l’Aéroport<br>Dakar, Sénégal</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#accueil"><img class="brand-logo" src="assets/al-waleed-suarL-logo.png" alt="AL WALEED SUARL"></a><p>© <span id="year"></span> AL WALEED SUARL. Tous droits réservés.</p><a href="#accueil">Retour en haut ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
